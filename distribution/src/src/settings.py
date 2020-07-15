@@ -25,7 +25,7 @@ SECRET_KEY = '_54+$ac5^m2+er+@y-myf_vtnd%b+zb&b5^#nxw=6q(e0f7h3p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['159.65.217.122']
+ALLOWED_HOSTS = ['namorseb.com','159.65.217.122']
 
 
 # Application definition
@@ -75,13 +75,24 @@ WSGI_APPLICATION = 'src.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
-DATABASES = {
+if DEGUB:
+    DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR,'db.sqlite3'),
+        }
     }
-}
+else:
+    DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'namorseb_website',
+        'USER': 'namorseb',
+        'PASSWORD': '1q@W3e$R',
+        'HOST': 'localhost',
+        'PORT': '',
+        }
+    }
 
 
 # Password validation
@@ -125,10 +136,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static_in_env'),
 ]
 VENV_PATH = os.path.dirname(BASE_DIR)
-STATIC_ROOT = os.path.join(VENV_PATH, 'static_root')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(VENV_PATH, 'media_root')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
 
 TINYMCE_JS_URL = 'http://debug.example.org/tiny_mce/tiny_mce_src.js'
 TINYMCE_DEFAULT_CONFIG = {
