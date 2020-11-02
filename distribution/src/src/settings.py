@@ -84,13 +84,13 @@ if DEBUG:
   }
 else:
     DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'website',
-        'USER': 'seb',
-        'PASSWORD': '1q@W3e$R',
-        'HOST': 'localhost',
-        'PORT': '',
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'website',
+            'USER': 'seb',
+            'PASSWORD': '1q@W3e$R',
+            'HOST': 'localhost',    
+            'PORT': '',
     }
 }
 
