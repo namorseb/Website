@@ -3,5 +3,5 @@ Personal website written to familiarize myself with the Django Framework.
 
 This project follows [this tutorial](https://github.com/justdjango/dream_blog). 
 
-Access the website live at namorseb.com:8000
+Access the website live [here](namorseb.com:8000)
 
