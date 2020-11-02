@@ -25,7 +25,7 @@ SECRET_KEY = '_54+$ac5^m2+er+@y-myf_vtnd%b+zb&b5^#nxw=6q(e0f7h3p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['namorseb.com','159.65.217.122']
+ALLOWED_HOSTS = ['192.168.1.5','127.0.0.1','159.65.217.122']
 
 
 # Application definition
@@ -85,12 +85,8 @@ WSGI_APPLICATION = 'src.wsgi.application'
 #else:
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'namorseb_website',
-        'USER': 'namorseb',
-        'PASSWORD': '1q@W3e$R',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
 
