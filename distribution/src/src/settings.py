@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_54+$ac5^m2+er+@y-myf_vtnd%b+zb&b5^#nxw=6q(e0f7h3p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['192.168.1.5','127.0.0.1','159.65.217.122']
 
@@ -86,7 +86,7 @@ else:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'blogDB',
+        'NAME': 'blogdb',
         'USER': 'seb',
         'PASSWORD': '1q@W3e$R',
         'HOST': 'localhost',
