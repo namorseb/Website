@@ -25,7 +25,7 @@ SECRET_KEY = '_54+$ac5^m2+er+@y-myf_vtnd%b+zb&b5^#nxw=6q(e0f7h3p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['192.168.1.5','127.0.0.1','159.65.217.122']
+ALLOWED_HOSTS = ['192.168.1.5','127.0.0.1','161.35.10.226']
 
 
 # Application definition
@@ -89,7 +89,7 @@ else:
             'NAME': 'website',
             'USER': 'seb',
             'PASSWORD': '1q@W3e$R',
-            'HOST': 'localhost',    
+            'HOST': 'localhost',
             'PORT': '',
     }
 }
