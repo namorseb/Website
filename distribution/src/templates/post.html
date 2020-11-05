@@ -10,6 +10,7 @@
         <main class="post blog-post col-lg-8">
           <div class="container">
             <div class="post-single">
+              <h1>{{ post.title }}<a href="#"><i class="fa fa-bookmark-o"></i></a></h1>
               <div class="post-thumbnail"><img src="{{ post.thumbnail.url }}" alt="..." class="img-fluid"></div>
               <div class="post-details">
                 <div class="post-meta d-flex justify-content-between">
@@ -17,7 +18,7 @@
                   <div class="category"><a href="#"></a><a href="#">{{ cat }}</a></div>
                   {% endfor %}
                 </div>
-                <h1>{{ post.title }}<a href="#"><i class="fa fa-bookmark-o"></i></a></h1>
+
                 <div class="post-footer d-flex align-items-center flex-column flex-sm-row"><a href="#" class="author d-flex align-items-center flex-wrap">
                     <div class="avatar"><img src="{% static 'img/avatar-1.jpg' %}" alt="..." class="img-fluid"></div>
                     <div class="title"><span>{{ post.Author }}</span></div></a>
